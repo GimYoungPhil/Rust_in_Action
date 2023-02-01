@@ -54,7 +54,7 @@ fn render_mandelbrot(escape_vals: Vec<Vec<usize>>) {
       let val = match column {
         0..=2 => ' ',
         3..=5 => '.',
-        6..=10 => '@',
+        6..=10 => '•',
         11..=30 => '*',
         31..=100 => '+',
         101..=200 => 'x',
