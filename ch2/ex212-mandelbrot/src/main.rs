@@ -40,7 +40,7 @@ fn mandelbrot_at_point(
 
   for i in 0..=max_iters {
     if z.norm() > 2.0 {
-        return i;
+      return i;
     }
     z = z * z + c;
   }
