@@ -47,7 +47,7 @@ fn main() {
     let f3_data: Vec<u8> = vec![
         114, 117, 115, 116, 33
     ];
-    let mut f3 = File::new_with_data("2.txt", &f3_data);
+    let mut f3 = File::new_with_data("3.txt", &f3_data);
 
     let mut buffer: Vec<u8> = vec![];
 
