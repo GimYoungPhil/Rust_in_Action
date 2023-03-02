@@ -6,12 +6,12 @@ struct CubeSat {
 }
 
 #[derive(Debug)]
-enum MessageStatus {
+enum StatusMessage {
     Ok,
 }
 
 fn check_status(sat_id: CubeSat) -> CubeSat {
-    println!("{:?}: {:?}", sat_id, MessageStatus::Ok);
+    println!("{:?}: {:?}", sat_id, StatusMessage::Ok);
     sat_id
 }
 
