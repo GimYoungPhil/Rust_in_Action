@@ -45,5 +45,4 @@ fn main() {
     println!("t2: {:?}", sat_a);
 
     println!("msg: {:?}", msg);
-
 }
