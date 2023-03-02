@@ -7,13 +7,13 @@ struct CubeSat {
 
 #[derive(Debug)]
 enum StatusMessage {
-    OK,
+    Ok,
 }
 
 fn check_status(
     sat_id: CubeSat
 ) -> StatusMessage {
-    StatusMessage::OK
+    StatusMessage::Ok
 }
 
 fn main() {
@@ -26,7 +26,7 @@ fn main() {
     let c_status = check_status(sat_c);
     println!("a: {:?}, b: {:?}, c: {:?}", a_status, b_status, c_status);
 
-    // waiting...
+    // waiting
     let a_status = check_status(sat_a);
     let b_status = check_status(sat_b);
     let c_status = check_status(sat_c);
