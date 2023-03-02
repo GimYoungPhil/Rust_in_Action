@@ -2,11 +2,11 @@
 
 #[derive(Debug)]
 enum StatusMessage {
-    OK,
+    Ok,
 }
 
 fn check_status(sat_id: u64) -> StatusMessage {
-    StatusMessage::OK
+    StatusMessage::Ok
 }
 
 fn main() {
