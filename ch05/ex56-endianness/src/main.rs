@@ -1,11 +1,10 @@
-use std::mem;
-
 fn main() {
-    let big_endian: [u8; 4] = [0xAA, 0xBB, 0xCC, 0xDD];
-    let little_endian: [u8; 4] = [0xDD, 0xCC, 0xBB, 0xAA];
+    // let base_exponent: 0b_0111_1111; // 127    0
+    // let base_exponent: 0b_1000_0000; // 128    1
+    // let base_exponent: 0b_1000_0001; // 129    2
+    // let base_exponent: 0b_1000_0010; // 130    3
+    // let base_exponent: 0b_1000_0011; // 131    4
+    let base_exponent = 0b_1000_0100; // 132    5
 
-    let a: i32 = unsafe { mem::transmute(big_endian) };
-    let b: i32 = unsafe { mem::transmute(little_endian) };
-
-    println!("{} vs {}", a, b);
+    println!("binary: {:b}, dec: {}", base_exponent, base_exponent);
 }
